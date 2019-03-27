@@ -37,12 +37,12 @@
   有一点需要注意的地方就是复杂对象适合使用工厂模式，而简单对象，特别是只需要通过 new 就可以完成创建的对象，无需使用工厂模式。如果使用工厂模式，就需要引入一个工厂类，会增加系统的复杂度。
   
   # 实现
-  ![factory_pattern_uml_diagram](../picture/factory_pattern_uml_diagram.jpg)
+  ![factory_pattern_uml_diagram](../picture/factory_pattern_uml_diagram.jpg)  
   
-  # 使用反射来解决工厂类开闭原则（对扩展开放，对修改关闭）的问题。
-  可参考代码 [ShapeFactory](../app/src/main/java/com/heinika/designpattern/factorypattern/SharpFactory.java)
-  在简单工厂模式中，对于实现类而言，的确是符合我们的开闭原则，当我们要添加新产品时，无需对业务进行修改，但是对于我们的工厂类而言，开闭原则没有很好的体现，每次都得修改。
-  [来自 android 系统代码的启示](https://www.jianshu.com/p/ba92d9cd83bc)
+  # 使用反射来解决工厂类开闭原则（对扩展开放，对修改关闭）的问题。  
+  可参考代码 [ShapeFactory](../app/src/main/java/com/heinika/designpattern/factorypattern/SharpFactory.java)  
+  在简单工厂模式中，对于实现类而言，的确是符合我们的开闭原则，当我们要添加新产品时，无需对业务进行修改，但是对于我们的工厂类而言，开闭原则没有很好的体现，每次都得修改。  
+  [来自 android 系统代码的启示](https://www.jianshu.com/p/ba92d9cd83bc)  
   
   
   
