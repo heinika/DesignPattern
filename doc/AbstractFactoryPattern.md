@@ -49,3 +49,67 @@
 # 实现
 
 ![抽象工厂模式的 UML 图](..\picture\abstractfactory_pattern_uml_diagram.jpg)
+
+[Android 系统源码中的使用](http://nodlee.com/2016/04/27/design-pattern-abstract-factory/)
+
+## 源码中的抽象工厂
+
+### [WebViewFactoryProvider](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/webkit/WebViewFactoryProvider.java)/[WebViewChromiumFactoryProvider](https://android.googlesource.com/platform/frameworks/webview/+/idea133/chromium/java/com/android/webview/chromium/WebViewChromiumFactoryProvider.java)
+
+[WebViewFactoryProvider.java](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/webkit/WebViewFactoryProvider.java)
+
+```java
+public interface WebViewFactoryProvider {
+    
+    ...
+    
+    WebViewProvider createWebView(WebView webView, WebView.PrivateAccess privateAccess);
+    
+    ...
+
+    CookieManager getCookieManager();
+
+    ...
+}
+```
+
+[WebViewChromiumFactoryProvider.java](https://android.googlesource.com/platform/frameworks/webview/+/idea133/chromium/java/com/android/webview/chromium/WebViewChromiumFactoryProvider.java)
+
+```java
+public class WebViewChromiumFactoryProvider implements WebViewFactoryProvider {
+    
+    @Override
+    public WebViewProvider createWebView(WebView webView, 
+    	WebView.PrivateAccess privateAccess) {
+        WebViewChromium wvc = new WebViewChromium(this, 
+        	webView, privateAccess);
+        
+        ...
+
+        return wvc;
+    }
+    
+    @Override
+    public CookieManager getCookieManager() {
+        synchronized (mLock) {
+            if (mCookieManager == null) {
+                
+                ...
+
+                mCookieManager = new CookieManagerAdapter(new AwCookieManager());
+            }
+        }
+        return mCookieManager;
+    }
+
+    ...
+}
+```
+
+WebViewFactoryProvider是抽象工厂接口，定义了WebView及周边功能所需要对象的创建方法，这些方法大部分为工厂方法，它们返回的对象类型是抽象的，属于面向接口的编程风格。抽象工厂WebViewFactoryProvider创建的对象有：实现Webview核心功能的WebViewProvider，管理Cookie的CookieManager，地理位置相关的GeolocationPermissions和存储Web表单数据的WebviewDatabase等等。WebViewChromiumFactoryProvider是抽象工厂的具体实现者，它提供“Chromium”主题的产品族，也是目前最新版本Webview正在使用的产品族，在[这里][5]有说明。如果将来有新的浏览器引擎内核出现，那么只需按照WebViewFactoryProvider接口创建该主题下产品，然后替换现有的”Chromium”就可以完成换代，不用改动其他地方任何代码。
+
+## 参考资料
+
+- [维基百科-抽象工厂](https://zh.![img](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Abstract_factory_UML.svg/300px-Abstract_factory_UML.svg.png)wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82)
+
+![img](../picture/1280px-Abstract_factory_UML.svg.png)
