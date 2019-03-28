@@ -3,7 +3,7 @@ package com.heinika.designpattern.factorypattern;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-public class SharpFactory {
+public class ShapeFactory {
     private static final String SHARP_PACKAGE = "com.heinika.designpattern.factorypattern.";
     public static Shape getSharp(String className){
         className = SHARP_PACKAGE + className;
