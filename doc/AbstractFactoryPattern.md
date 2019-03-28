@@ -48,7 +48,7 @@
 
 # 实现
 
-![抽象工厂模式的 UML 图](..\picture\abstractfactory_pattern_uml_diagram.jpg)
+![抽象工厂模式的 UML 图](../picture/abstractfactory_pattern_uml_diagram.jpg)
 
 [Android 系统源码中的使用](http://nodlee.com/2016/04/27/design-pattern-abstract-factory/)
 
