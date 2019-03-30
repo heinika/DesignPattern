@@ -1,8 +1,8 @@
 package com.heinika.designpattern.abstractfactorypattern;
 
-import org.junit.Test;
+import com.heinika.designpattern.abstractfactory.AbstractFactoryPatternDemo;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class AbstractFactoryPatternDemoTest {
     @Test

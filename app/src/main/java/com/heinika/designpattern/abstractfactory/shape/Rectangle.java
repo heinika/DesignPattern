@@ -1,4 +1,4 @@
-package com.heinika.designpattern.abstractfactorypattern.shape;
+package com.heinika.designpattern.abstractfactory.shape;
 
 import static java.lang.System.out;
 

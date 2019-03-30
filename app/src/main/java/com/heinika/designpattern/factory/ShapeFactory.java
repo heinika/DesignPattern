@@ -1,4 +1,4 @@
-package com.heinika.designpattern.factorypattern;
+package com.heinika.designpattern.factory;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

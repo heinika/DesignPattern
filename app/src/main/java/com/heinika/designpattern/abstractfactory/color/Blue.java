@@ -1,4 +1,4 @@
-package com.heinika.designpattern.abstractfactorypattern.color;
+package com.heinika.designpattern.abstractfactory.color;
 
 import static java.lang.System.out;
 

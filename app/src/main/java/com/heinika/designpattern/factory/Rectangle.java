@@ -1,4 +1,4 @@
-package com.heinika.designpattern.factorypattern;
+package com.heinika.designpattern.factory;
 
 import static java.lang.System.out;
 

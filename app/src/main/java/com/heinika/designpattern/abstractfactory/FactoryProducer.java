@@ -1,4 +1,4 @@
-package com.heinika.designpattern.abstractfactorypattern;
+package com.heinika.designpattern.abstractfactory;
 
 import java.lang.reflect.InvocationTargetException;
 

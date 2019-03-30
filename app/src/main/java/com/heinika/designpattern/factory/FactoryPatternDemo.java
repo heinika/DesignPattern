@@ -1,4 +1,4 @@
-package com.heinika.designpattern.factorypattern;
+package com.heinika.designpattern.factory;
 
 public class FactoryPatternDemo {
     public void main(){

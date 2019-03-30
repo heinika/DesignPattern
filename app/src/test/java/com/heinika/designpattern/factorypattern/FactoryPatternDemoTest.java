@@ -1,8 +1,8 @@
 package com.heinika.designpattern.factorypattern;
 
-import org.junit.Test;
+import com.heinika.designpattern.factory.FactoryPatternDemo;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class FactoryPatternDemoTest {
 

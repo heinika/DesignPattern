@@ -1,8 +1,7 @@
-package com.heinika.designpattern.abstractfactorypattern;
+package com.heinika.designpattern.abstractfactory;
 
-import com.heinika.designpattern.abstractfactorypattern.color.Color;
-import com.heinika.designpattern.abstractfactorypattern.color.Red;
-import com.heinika.designpattern.abstractfactorypattern.shape.Square;
+import com.heinika.designpattern.abstractfactory.color.Red;
+import com.heinika.designpattern.abstractfactory.shape.Square;
 
 public class AbstractFactoryPatternDemo {
     public void main(){
