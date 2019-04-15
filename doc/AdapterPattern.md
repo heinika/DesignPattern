@@ -1,0 +1,2 @@
+![AdapterPattern](../picture/AdapterPattern.png)
+

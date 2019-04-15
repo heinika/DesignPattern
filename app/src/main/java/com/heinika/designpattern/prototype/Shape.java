@@ -1,14 +1,14 @@
 package com.heinika.designpattern.prototype;
 
 public abstract class Shape implements Cloneable{
-    private int id;
+    private String id;
     public String type;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -20,12 +20,11 @@ public abstract class Shape implements Cloneable{
 
     @Override
     public Object clone() {
-        Object clone = null;
         try {
-            clone = super.clone();
+            return super.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        return clone;
+        return null;
     }
 }
