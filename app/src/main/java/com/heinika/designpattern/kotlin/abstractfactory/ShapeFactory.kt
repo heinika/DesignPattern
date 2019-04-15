@@ -1,7 +1,7 @@
 package com.heinika.designpattern.kotlin.abstractfactory
 
-class SharpFactory : AbstractFactory() {
-    override fun <T : Sharp> getSharp(clazz: Class<T>): Sharp? {
+class ShapeFactory : AbstractFactory() {
+    override fun <T : Shape> getShape(clazz: Class<T>): Shape? {
         return clazz.getDeclaredConstructor().newInstance();
     }
 

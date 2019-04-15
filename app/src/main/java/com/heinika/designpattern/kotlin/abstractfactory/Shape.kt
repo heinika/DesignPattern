@@ -1,5 +1,5 @@
 package com.heinika.designpattern.kotlin.abstractfactory
 
-interface Sharp{
+interface Shape{
     fun draw()
 }

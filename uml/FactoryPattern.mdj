@@ -281,7 +281,7 @@
 															"_parent": {
 																"$ref": "AAAAAAFpyJ1kON9NOLs="
 															},
-															"name": "SHARP_PACKAGE",
+															"name": "shape_PACKAGE",
 															"visibility": "private",
 															"isStatic": true,
 															"isLeaf": true,
@@ -297,7 +297,7 @@
 															"_parent": {
 																"$ref": "AAAAAAFpyJ1kON9NOLs="
 															},
-															"name": "getSharp",
+															"name": "getshape",
 															"isStatic": true,
 															"parameters": [
 																{
@@ -1224,7 +1224,7 @@
 																			"width": 486.9794921875,
 																			"height": 13,
 																			"underline": true,
-																			"text": "-SHARP_PACKAGE: String = \"com.heinika.designpattern.factorypattern.\" {readOnly}",
+																			"text": "-shape_PACKAGE: String = \"com.heinika.designpattern.factorypattern.\" {readOnly}",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -1257,7 +1257,7 @@
 																			"width": 219.30517578125,
 																			"height": 13,
 																			"underline": true,
-																			"text": "+getSharp(className: String): Shape",
+																			"text": "+getshape(className: String): Shape",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -3474,7 +3474,7 @@
 											"width": 486.9794921875,
 											"height": 13,
 											"underline": true,
-											"text": "-SHARP_PACKAGE: String = \"com.heinika.designpattern.factorypattern.\" {readOnly}",
+											"text": "-shape_PACKAGE: String = \"com.heinika.designpattern.factorypattern.\" {readOnly}",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3510,7 +3510,7 @@
 											"width": 219.30517578125,
 											"height": 13,
 											"underline": true,
-											"text": "+getSharp(className: String): Shape",
+											"text": "+getshape(className: String): Shape",
 											"horizontalAlignment": 0
 										}
 									],

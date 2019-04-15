@@ -2,9 +2,9 @@ package com.heinika.designpattern.factory;
 
 public class FactoryPatternDemo {
     public void main(){
-        Circle circle = (Circle) ShapeFactory.getSharp("Circle");
-        Square square = (Square) ShapeFactory.getSharp("Square");
-        Rectangle rectangle = (Rectangle) ShapeFactory.getSharp("Rectangle");
+        Circle circle = (Circle) ShapeFactory.getshape("Circle");
+        Square square = (Square) ShapeFactory.getshape("Square");
+        Rectangle rectangle = (Rectangle) ShapeFactory.getshape("Rectangle");
         circle.draw();
         square.draw();
         rectangle.draw();

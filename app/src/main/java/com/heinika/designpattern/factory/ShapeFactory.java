@@ -4,9 +4,9 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class ShapeFactory {
-    private static final String SHARP_PACKAGE = "com.heinika.designpattern.factorypattern.";
-    public static Shape getSharp(String className){
-        className = SHARP_PACKAGE + className;
+    private static final String shape_PACKAGE = "com.heinika.designpattern.factorypattern.";
+    public static Shape getshape(String className){
+        className = shape_PACKAGE + className;
         try {
             Class c = Class.forName(className);
             Constructor constructor = c.getConstructor();

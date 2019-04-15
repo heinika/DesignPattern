@@ -1,7 +1,7 @@
 package com.heinika.designpattern.kotlin.abstractfactory
 
 class ColorFactory : AbstractFactory() {
-    override fun <T : Sharp> getSharp(clazz: Class<T>): Sharp? {
+    override fun <T : Shape> getShape(clazz: Class<T>): Shape? {
         return null
     }
 
