@@ -7,7 +7,7 @@ public class Circle extends Shape {
 
     @Override
     public void draw() {
-        drawApi.drawCircle(x,y,radius);
+        drawApi.drawCircle(radius,x,y);
     }
 
     public Circle(int x,int y,int radius,DrawApi drawApi){
