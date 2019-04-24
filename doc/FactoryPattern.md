@@ -40,7 +40,7 @@
   ![factory_pattern_uml_diagram](../picture/factory_pattern_uml_diagram.jpg)  
   
   # 使用反射来解决工厂类开闭原则（对扩展开放，对修改关闭）的问题。  
-  可参考代码 [ShapeFactory](../app/src/main/java/com/heinika/designpattern/factorypattern/shapeFactory.java)  
+  可参考代码 [ShapeFactory](https://github.com/heinika/DesignPattern/blob/master/app/src/main/java/com/heinika/designpattern/factory/ShapeFactory.java)  
   在简单工厂模式中，对于实现类而言，的确是符合我们的开闭原则，当我们要添加新产品时，无需对业务进行修改，但是对于我们的工厂类而言，开闭原则没有很好的体现，每次都得修改。  
   [来自 android 系统代码的启示](https://www.jianshu.com/p/ba92d9cd83bc)  
   
