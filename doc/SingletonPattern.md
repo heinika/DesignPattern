@@ -52,3 +52,5 @@
 # 实现
 
 ![image-20190330151154412](../picture/SingletonPattern.png)
+
+
