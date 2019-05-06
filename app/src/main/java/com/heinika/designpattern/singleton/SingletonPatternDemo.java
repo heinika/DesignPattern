@@ -1,8 +1,9 @@
 package com.heinika.designpattern.singleton;
 
 public class SingletonPatternDemo {
-    public void main(){
-        SingleObject singleObject = SingleObject.getInstance();
-        singleObject.showMessage();
+
+    public static void main(String[] args) {
+        SingleObject6 singleObject6 = SingleObject6.instance;
+        singleObject6.showMessage();
     }
 }
